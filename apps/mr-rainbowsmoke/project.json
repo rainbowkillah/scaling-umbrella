@@ -1,0 +1,26 @@
+{
+  "name": "mr-rainbowsmoke",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mr-rainbowsmoke/src",
+  "projectType": "application",
+  "tags": ["cloudflare", "worker", "mr-rainbowsmoke"],
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "wrangler dev",
+        "cwd": "apps/mr-rainbowsmoke"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "wrangler deploy",
+        "cwd": "apps/mr-rainbowsmoke"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

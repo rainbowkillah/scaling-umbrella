@@ -1,0 +1,9 @@
+name = "mr-rainbowsmoke"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Account information for Mr. Rainbowsmoke
+# account_id = "your-account-id-here"
+
+[env.production]
+name = "mr-rainbowsmoke"
